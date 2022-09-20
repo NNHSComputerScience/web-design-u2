@@ -1,0 +1,14 @@
+/* This is a comment in CSS */
+body {border-style: dashed;
+      border-width: 2px;
+      font-family: "Times New Roman", sans-serif;
+      background-color: lightskyblue;}
+
+p {color: darkslategray;}
+
+h1, h2 {color: darkgreen;
+        text-align: center;}
+
+li {list-style-type: circle;}
+
+
