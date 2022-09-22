@@ -20,3 +20,12 @@ ul {
 	list-style-type:circle;
 }
 
+/* .section targets all elements of class "section" */
+.section {
+	margin:auto;
+  	width: 80%;
+  	background: #f2c120;
+  	border: solid 20px #4d4600;
+}
+
+/* #bold targets ONE element with the id "bold" */
