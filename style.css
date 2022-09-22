@@ -1,14 +1,22 @@
-/* This is a comment in CSS */
-body {border-style: dashed;
-      border-width: 2px;
-      font-family: "Times New Roman", sans-serif;
-      background-color: lightskyblue;}
+/* This is comment in CSS */
 
-p {color: darkslategray;}
+/* CSS SYNTAX TERMINOLOGY
+p is the CSS SELECTOR; color is CSS style property; dark blue color is the CSS property's value; and "color:#00008f;" is the CSS style declaration
+*/
 
-h1, h2 {color: darkgreen;
-        text-align: center;}
+p {
+	color:#00008f;
+	background-color:#f0d4ad;
+}
 
-li {list-style-type: circle;}
+/* We can target multiple selectors by comma-separating them*/
+h1, h2 {
+	color:darkgreen;
+	text-align: center;
+}
 
+ul {
+	background-color:pink;
+	list-style-type:circle;
+}
 
