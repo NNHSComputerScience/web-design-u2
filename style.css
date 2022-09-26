@@ -1,6 +1,6 @@
 /* This is comment in CSS */
 
-/* web font example using google fonts*/
+/* web font example using fonts.google.com */
 @import 'https://fonts.googleapis.com/css?family=Coda';
 
 /* CSS SYNTAX TERMINOLOGY
@@ -11,7 +11,7 @@ p {
 	color:#00008f;
 	background-color:#f0d4ad;
 	
-	/* web-safe font example; change to "Coda" to see web font example*/
+	/* Font Stack - first selection is the preferred font, followed by our fallback font options. */
 	font-family: Tahoma, Verdana, sans-serif;
 	
 }
@@ -20,6 +20,8 @@ p {
 h1, h2 {
 	color:darkgreen;
 	text-align: center;
+	/* using the Google Font we imported */
+	font-family: 'Nanum Gothic', sans-serif;
 }
 
 ul {
