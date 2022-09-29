@@ -1,7 +1,7 @@
 /* This is comment in CSS */
 
-/* web font example using fonts.google.com */
-@import 'https://fonts.googleapis.com/css?family=Coda';
+/* web font example usig fonts.google.com */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
 /* CSS SYNTAX TERMINOLOGY
 p is the CSS SELECTOR; color is CSS style property; dark blue color is the CSS property's value; and "color:#00008f;" is the CSS style declaration
@@ -10,10 +10,8 @@ p is the CSS SELECTOR; color is CSS style property; dark blue color is the CSS p
 p {
 	color:#00008f;
 	background-color:#f0d4ad;
-	
 	/* Font Stack - first selection is the preferred font, followed by our fallback font options. */
 	font-family: Tahoma, Verdana, sans-serif;
-	
 }
 
 /* We can target multiple selectors by comma-separating them*/
@@ -29,15 +27,15 @@ ul {
 	list-style-type:circle;
 }
 
-/* .section targets ALL elements of class "section" */
+/* .section targets all elements of class named "section" */
 .section {
+	/* 'margin:auto; centers elements horizontally relevant to its container. width will make the element a certain width on the page.' */
 	margin:auto;
-  	width: 80%;
-  	background: #f2c120;
-  	border: solid 20px #4d4600;
+	width:80%;
+	background-color: #ffff38;
+	border: solid 20px #575700;
 }
-
-/* #bold targets ONE element with the id "bold" */
+/* #bold targets one element named "bold" */
 #bold {
-	font-weight:bold;
+	font-weight: bold;
 }
