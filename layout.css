@@ -1,0 +1,104 @@
+/* universal selector - zero out all default margin and padding of browser */
+* {
+	margin:0;
+  	padding:0;
+	/*The "box-sizing:border-box;" declaration allows us to include the padding and border in an element's total width and height.*/
+	box-sizing: border-box;
+  }
+
+html {background-color: white;}
+
+body {
+  text-align:center ; 
+  width:100% ; 
+  background-color:gray ;
+	font-family: Arial, sans-serif;
+  margin:auto ;}
+
+/* Center all headings and paragraphs*/
+h1, h2, h3, h4, h5, p {text-align:center;}
+
+header {
+	width: 100%;
+	background-color:red;
+	padding: 5px;
+	border: black solid 1px;
+	/* positioned based on the user's scroll position */
+	position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+	/* When elements are positioned, they can overlap other elements.
+
+The z-index property specifies the stack order of an element (which element should be placed in front of, or behind, the others).
+
+An element can have a positive or negative stack order */
+	z-index: 1;
+}
+/* Clearfix hack */
+.clearfix {
+overflow:auto;
+}
+
+nav {
+	background-color:blue;
+  float:left;
+  width: calc(20% - 10px);
+	min-width: 100px;
+  height:500px;
+  margin:5px;
+	padding: 5px;
+	border: black solid 1px;
+	/* positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled */
+	position: fixed;
+}
+
+section {
+	background-color:yellow ;
+  float:left ;
+  width:calc(60% - 10px);
+	min-width: 100px;
+  height: 500px ;
+  margin: 5px ;
+	padding: 5px;
+	border: black solid 1px;
+	/* positioned relative to its normal position */
+	position: relative;
+	left: 20%;	
+}
+
+article {
+	background-color:green ;
+  width:90% ;
+  height:400px ;
+  margin:auto ;
+	/* OVERFLOW property controls what happens to content that is too big to fit into an area.
+*/
+  overflow: auto;
+	padding: 5px;
+	border: black solid 1px;
+	/* positioned relative to the nearest positioned ancestor */
+	position: absolute;
+	right: 0px;
+}
+
+aside {
+	background-color:purple ;
+  float:right ;
+  width: calc(20% - 10px);
+	min-width: 100px;
+  height:500px ;
+  margin:5px ;
+	padding: 5px;
+	border: black solid 1px;
+}
+
+footer {
+	background-color:orange;
+	/* use clear to stop the flow of content around a floating element*/
+    clear:both ;
+	padding: 5px;
+	border: black solid 1px;
+	/* Static is the default position for HTML elements */
+	position: static;
+	
+}
